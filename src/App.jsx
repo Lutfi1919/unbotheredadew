@@ -187,8 +187,8 @@ function App() {
         <p className="mt-4 text-5xl font-semibold">Project yang saya kerjakan</p>
         <p className="mt-4 mb-18 text-xl text-center opacity-75">Berikut beberapa proyek yang telah saya selesaikan, dan saya akan terus belajar untuk meningkatkan keterampilan saya di bidang ini.</p> */}
         <div className="md:grid md:grid-cols-2" data-aos="fade-in">
-          <p className="text-6xl md:text-8xl tracking-tight mb-15 font-semibold text-start">Projects</p>
-          <p className="text-gray-500 mb-6 -mt-11 md:mt-3 md:text-gray-500 font-semibold text-start text-sm">Berikut beberapa proyek yang telah saya selesaikan, dan saya akan terus belajar untuk meningkatkan keterampilan saya di bidang ini.</p>
+          <p className="text-6xl md:text-8xl tracking-tight mb-15 font-semibold text-start">Projects.</p>
+          <p className="mb-6 -mt-11 md:mt-3 font-semibold text-start opacity-80 text-sm">Berikut beberapa proyek yang telah saya selesaikan, dan saya akan terus belajar untuk meningkatkan keterampilan saya di bidang ini.</p>
         </div>
         <div className="flex flex-wrap border-b w-full justify-start" data-aos="fade-in">
           {
@@ -221,8 +221,8 @@ function App() {
       <div id="achievements"></div>
       <section className="" style={{fontFamily: "Stack Sans Headline"}}>
         <div className="">
-          <p className="text-5xl mt-25 md:text-8xl tracking-tight mb-3 font-semibold text-start" data-aos="fade-in">Achievements</p>
-          <p className="text-gray-500 font-semibold text-start text-sm" data-aos="fade-in">Berikut beberapa sertifikat yang telah saya peroleh, dan saya akan terus belajar untuk lebih meningkatkan keterampilan saya di bidang ini.</p>
+          <p className="text-5xl mt-25 md:text-8xl tracking-tight mb-3 font-semibold text-start" data-aos="fade-in">Achievements.</p>
+          <p className="opacity-80! font-semibold text-start text-sm" data-aos="fade-in">Berikut beberapa sertifikat yang telah saya peroleh, dan saya akan terus belajar untuk lebih meningkatkan keterampilan saya di bidang ini.</p>
           <div className="-mt-22" style={{ height: '600px', position: 'relative' }}>
             <CircularGallery
               bend={0}
