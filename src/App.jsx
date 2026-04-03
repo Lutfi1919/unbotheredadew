@@ -23,6 +23,7 @@ import CircularGallery from './components/CircularGallery';
 import { useState } from "react";
 import ContactComp from "./components/ContactComp";
 import MusicComp from "./components/MusicComp";
+import { HiCursorClick } from "react-icons/hi";
 
 function App() {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -51,7 +52,7 @@ function App() {
     {
       img: code4,
       title: "Todo App",
-      description: "Project ini dibuat untuk meng-upgrade web portfolio saya sebelumnya menggunakan bahasa pemrograman baru",
+      description: "Website Todo app untuk meningkatkan level produktivitas. Membantu kamu memprioritaskan pekerjaan, menetapkan tenggat waktu, dan mengatur kategori proyek secara efisien.",
       tools: ["Laravel", "Bootstrap", "MySQL", "PHP", "HTML", "CSS", "Javascript"],
       type: "code"
     },
@@ -116,11 +117,14 @@ function App() {
             <span className="text-2xl md:text-2xl">✦</span>
             <a href="https://www.instagram.com/lutfiworks/#" target="_blank" className="text-2xl md:text-2xl m-3 hover:text-[#d27b2e] duration-150 hover:underline md:ms-5">Portfolio</a>
           </div>
-          <div className="mt-6 md:flex md:mt-20 md:justify-center w-full md:w-fit text-center border cursor-pointer">
-            <p className="bg-[#302f2c] text-[#f2f1ef] py-4 md:px-5 md:py-3 text-center">Scroll</p>
-            <div className="py-4 md:py-3">
-              <a href="#about" className="md:px-5 md:py-3 md:border-l duration-250 hover:underline hover:text-[#d27b2e]">Letsgowwww</a>
+          <div className="flex items-center">
+            <div className="mt-6 md:flex md:mt-20 md:justify-center w-full md:w-fit text-center border cursor-pointer">
+              <p className="bg-[#302f2c] text-[#f2f1ef] py-4 md:px-5 md:py-3 text-center">Scroll</p>
+              <div className="py-4 md:py-3">
+                <a href="#about" className="md:px-5 md:py-3 md:border-l duration-250 hover:underline hover:text-[#d27b2e]">Letsgowwww</a>
+              </div>
             </div>
+            <HiCursorClick className="text-2xl mt-27 -ms-5"/>
           </div>
         </nav>
         <div className="flex justify-center items-center">
