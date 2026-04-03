@@ -38,7 +38,8 @@ const [status, setStatus] = useState("");
                 Accept: "application/json",
             },
         });
-
+        const result = await res.json();
+console.log(result);
         if (res.ok) {
             setStatus("success");
             form.reset();
@@ -52,9 +53,9 @@ const [status, setStatus] = useState("");
         }
     };
     return (
-        <div className="">
+        <div className="mt-10 md:mt-0">
             <form onSubmit={handleSubmit}>
-                <input type="text" name="_gotcha" style={{ display: "none" }} />
+                <input type="text" name="_gotcha" style={{ display: "none" }} tabIndex="-1" autoComplete="off" />
                 <div className="mb-7 grid grid-rows-2">
                     <label htmlFor="">First Name</label>
                     <input type="text" name="firstName" id="firstName" className="border-b-2 -mt-3 p-3" required/>
