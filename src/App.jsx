@@ -140,21 +140,21 @@ function App() {
           <div className="flex mt-8 justify-between">
             <div className="">
               <p className="text-2xl italic font-semibold">Soft Skill</p>
-              <li className="ms-5">
+              <ul className="list-disc ms-5">
                 <li>Manajemen waktu</li>
                 <li>Networking</li>
                 <li>Kolaborasi</li>
                 <li>....</li>
-              </li>
+              </ul>
             </div>
             <div className="">
               <p className="text-2xl italic font-semibold">Hard Skill</p>
-              <li className="ms-5">
+              <ul className="list-disc ms-5">
                 <li>UI/UX design</li>
                 <li>Programming</li>
                 <li>Automotive service</li>
                 <li>....</li>
-              </li>
+              </ul>
             </div>
           </div>
           <p className="text-xs">*hire me to unlock my full potential.😁</p>
