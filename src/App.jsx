@@ -241,7 +241,7 @@ function App() {
         </div>
       </section>
       <footer className="bg-[#302f2c] text-[#f2f1ef]" style={{fontFamily: "Stack Sans Headline"}}>
-        <div className="max-w-[1100px] pt-17 pb-8 md:grid md:grid-cols-2 ms-4">
+        <div className="pt-17 pb-8 md:grid md:grid-cols-2 ms-4" style={{maxWidth: "1100px"}}>
           <div className="text-center">
             <div className="flex justify-center md:justify-start md:ms-27">
               <img src={fotoBradpitt} className="animate-spin [animation-duration:3000ms] w-20 mb-10 md:mb-25 h-20 object-cover rounded-full" alt="Bradpitt" />
