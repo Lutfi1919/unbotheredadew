@@ -9,9 +9,8 @@ export default function MusicComp() {
             if (audioRef.current) {
             audioRef.current.play()
             .then(() => {
-                console.log("Musik mulai diputar setelah interaksi!");
                 removeInteractions();
-                }).catch((err) => console.log("Gagal memutar:", err));
+                }).catch((err) => console.log(err));
             }
         };
 
