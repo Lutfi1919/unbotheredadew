@@ -240,10 +240,10 @@ function App() {
           </div>
         </div>
       </section>
-      <footer className="bg-[#302f2c] text-[#f2f1ef]" style={{fontFamily: "Stack Sans Headline"}}>
-        <div className="pt-17 pb-8 md:grid md:grid-cols-2 ms-4" style={{maxWidth: "1100px"}}>
-          <div className="text-center">
-            <div className="flex justify-center md:justify-start md:ms-27">
+      <footer className="bg-[#302f2c] flex justify-center text-[#f2f1ef]" style={{fontFamily: "Stack Sans Headline"}}>
+        <div className="max-w-[1100px] pt-17 pb-8 md:grid md:grid-cols-2 justify-between ">
+          <div className="text-center md:text-start">
+            <div className="flex justify-center md:justify-start">
               <img src={fotoBradpitt} className="animate-spin [animation-duration:3000ms] w-20 mb-10 md:mb-25 h-20 object-cover rounded-full" alt="Bradpitt" />
             </div>
             <p className="mb-10 md:tracking-wider text-sm">© Made by Bradpitt (Luthfi). All rights reserved.</p>
@@ -254,7 +254,7 @@ function App() {
               <a href="#projects" className="duration-150 hover:-translate-y-1.5 hover:text-[#d27b2e] hover:underline">Projects</a>
               <a href="#achievements" className="duration-150 hover:-translate-y-1.5 hover:text-[#d27b2e] hover:underline">Achievements</a>
             </div>
-            <div className="flex justify-between mx-27 md:ms-90 md:mx-0 text-xl">
+            <div className="flex justify-between gap-3 mx-27 md:ms-90 md:mx-0 text-xl">
               <a href="https://www.linkedin.com/in/luthfi-ahmad-mauludi" target="_blank" className="border rounded-full p-3 duration-150 hover:-translate-y-1.5 opacity-70 hover:text-[#d27b2e] hover:opacity-100"><FaLinkedin /></a>
               <a href="https://github.com/Lutfi1919" target="_blank" className="border rounded-full p-3 duration-150 hover:-translate-y-1.5 opacity-70 hover:text-[#d27b2e] hover:opacity-100"><FaGithub /></a>
               <a href="https://www.instagram.com/lutfiamdm/#" target="_blank" className="border rounded-full p-3 duration-150 hover:-translate-y-1.5 opacity-70 hover:text-[#d27b2e] hover:opacity-100"><FaInstagram /></a>
