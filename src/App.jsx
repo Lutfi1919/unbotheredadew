@@ -169,9 +169,9 @@ function App() {
         <p className="text-2xl font-semibold" data-aos="fade-in">Riwayat Pendidikan</p>
         <div className="mt-5">
           <SekolahComp link={"https://sekolah.data.kemendikdasmen.go.id/profil-sekolah/80C38105-2DF5-E011-B4EE-55755C678D10"} logo={logoSD} nama={"Sekolah Dasar Negeri Harjasari 1, Bogor"} jurusan={"Student"} awalMasuk={"2015"} lulus={"2021"}/>
-          <p className="text-end text-3xl -mt-5 mb-1.5 border-r-2 me-3 opacity-60">&ensp;</p>
+          <p className="text-end text-3xl -mt-5 mb-1.5 border-r-2 me-3 opacity-60" data-aos="fade-in">&ensp;</p>
           <SekolahComp link={"https://www.smpamaliahciawi.sch.id/"} logo={logoSMP} nama={"Sekolah Menengah Pertama Amaliah, Bogor"} jurusan={"Student"} awalMasuk={"2021"} lulus={"2024"}/>
-          <p className="text-end text-3xl -mt-5 mb-1.5 border-r-2 me-3 opacity-60">&ensp;</p>
+          <p className="text-end text-3xl -mt-5 mb-1.5 border-r-2 me-3 opacity-60" data-aos="fade-in">&ensp;</p>
           <SekolahComp link={"https://smkwikrama.sch.id/"} logo={logoSMK} nama={"Sekolah Menengah Kejuruan Wikrama, Bogor"} jurusan={"PPLG/RPL"} awalMasuk={"Juli 2024"} lulus={"Present"}/>
         </div>
       </section>

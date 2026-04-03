@@ -18,7 +18,6 @@ const [status, setStatus] = useState("");
     const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // ✅ validasi captcha dulu
     if (parseInt(captchaInput) !== captcha.num1 + captcha.num2) {
       setStatus("captcha_error");
       generateCaptcha();
@@ -39,7 +38,7 @@ const [status, setStatus] = useState("");
             },
         });
         const result = await res.json();
-console.log(result);
+        console.log(result);
         if (res.ok) {
             setStatus("success");
             form.reset();
