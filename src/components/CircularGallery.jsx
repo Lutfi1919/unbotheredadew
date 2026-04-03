@@ -5,8 +5,6 @@ import certif2 from '../assets/certificates/Certif_Dicoding2.jpg';
 import certif3 from '../assets/certificates/Certif_Dicoding3.jpg';
 import certif4 from '../assets/certificates/Certif_Dicoding4.jpg';
 import certif5 from '../assets/certificates/Financial_Literacy.jpg';
-import certif6 from '../assets/certificates/Certif_Myskill1.jpg';
-import certif7 from '../assets/certificates/Certif_Myskill2.jpg';
 import certif8 from '../assets/certificates/Express_Course.jpg';
 import certif9 from '../assets/certificates/Coding_Teen.png';
 import certif10 from '../assets/certificates/Certif_K3.jpg';
@@ -349,8 +347,6 @@ class App {
       { image: certif3, text: '' },
       { image: certif4, text: '' },
       { image: certif5, text: '' },
-      { image: certif6, text: '' },
-      { image: certif7, text: '' },
       { image: certif8, text: '' },
       { image: certif9, text: '' },
       { image: certif10, text: '' },
