@@ -4,7 +4,7 @@ export default function ProjectCardComp({ img, title, description, tools = [], t
             {
                 type == "code" ? (
                     <div className="mb-5">
-                        <img src={img} className="w-[600px] h-[300px] object-cover" alt="" />
+                        <img src={img} className="object-cover" alt="" style={{width: "600px", height: "300px"}}/>
                         <p className="mt-3 text-2xl font-medium">{title}</p>
                         <p className="text-sm mt-1 text-gray-500">{description}</p>
                         <div className="flex flex-wrap! gap-1.5 mt-3">
@@ -17,7 +17,7 @@ export default function ProjectCardComp({ img, title, description, tools = [], t
                     </div>
                 ) : (
                     <div className="mb-5">
-                        <img src={img} className="w-[600px] h-[300px] object-cover" alt="" />
+                        <img src={img} className="object-cover" alt=""  style={{width: "600px", height: "300px"}}/>
                         <p className="mt-3 text-2xl font-medium">{title}</p>
                         <p className="text-sm mt-1 text-gray-500">{description}</p>
                         <div className="flex flex-wrap! gap-1.5 mt-3">
