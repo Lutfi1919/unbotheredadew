@@ -253,7 +253,7 @@ function App() {
         <div className="">
           <p className="tracking-tighter text-[70px] font-medium md:text-[215px]">Contact Me</p>
           <div className="md:grid md:grid-cols-2 text-xl mt-8">
-            <p className="">Bogor, West java, Indonesia</p>
+            <p className="">Bogor City, West java, Indonesia</p>
             <ContactComp />
             <p className="mt-13 text-3xl md:text-[44px]">luthfiamad19@gmail.com</p>
             <p className="md:mt-13 text-3xl md:text-[44px] md:text-end">(+62) 878-7522-1858</p>
