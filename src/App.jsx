@@ -14,10 +14,12 @@ import code1 from './assets/projects/portoke2.png';
 import code2 from './assets/projects/portoke3.png';
 import code3 from './assets/projects/webosis.png';
 import code4 from './assets/projects/todoapp.png';
+import code5 from './assets/projects/iqra.png';
 import desain1 from './assets/projects/desain1.png';
 import desain2 from './assets/projects/desain2.png';
 import desain3 from './assets/projects/desain3.png';
 import desain4 from './assets/projects/desain4.png';
+import desain5 from './assets/projects/webosis.png';
 import ProjectCardComp from "./components/ProjectCardComp";
 import CircularGallery from './components/CircularGallery';
 import { useState } from "react";
@@ -55,6 +57,20 @@ function App() {
       description: "Website Todo app untuk meningkatkan level produktivitas. Membantu kamu memprioritaskan pekerjaan, menetapkan tenggat waktu, dan mengatur kategori proyek secara efisien.",
       tools: ["Laravel", "Bootstrap", "MySQL", "PHP", "HTML", "CSS", "Javascript"],
       type: "code"
+    },
+    {
+      img: code5,
+      title: "Iqra",
+      description: "Website untuk membaca Al-Quran secara online. Membantu kamu membaca quran dimana saja dengan praktis.",
+      tools: ["React", "HTML", "CSS", "Tailwind", "CSS", "Javascript", "Postman"],
+      type: "code"
+    },
+    {
+      img: desain5,
+      title: "Website OSIS & MPR",
+      description: "Desain ini dibuat dengan tujuan kerangka dasar yang dibuat menggunakan platform Figma untuk merencanakan layout dan fitur website ini.",
+      tools: ["Figma"],
+      type: "design"
     },
     {
       img: desain1,
