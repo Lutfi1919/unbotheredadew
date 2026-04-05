@@ -36,35 +36,40 @@ function App() {
       title: "Portfolio Web V2",
       description: "Project ini dibuat untuk kebutuhan personal branding.",
       tools: ["HTML", "CSS", "Javascript", "Bootstrap"],
-      type: "code"
+      type: "code",
+      repo: "https://github.com/Lutfi1919/mypersonal-website"
     },
     {
       img: code2,
       title: "Portfolio Web V3",
       description: "Project ini dibuat untuk meng-upgrade web portfolio saya sebelumnya menggunakan bahasa pemrograman baru",
       tools: ["React", "Bootstrap", "React Bits", "Formspree", "HTML", "CSS", "Javascript"],
-      type: "code"
+      type: "code",
+      repo: "https://github.com/Lutfi1919/portfolioweb-v3"
     },
     {
       img: code3,
       title: "Website OSIS & MPR",
       description: "Project yang dibuat memenuhi kebutuhan penilaian. Untuk mempermudah para OSIS untuk menginput data",
       tools: ["Laravel", "Bootstrap", "MySQL", "PHP", "HTML", "CSS", "Javascript"],
-      type: "code"
+      type: "code",
+      repo: "https://github.com/Lutfi1919/organisasi-laravel"
     },
     {
       img: code4,
       title: "Todo App",
       description: "Website Todo app untuk meningkatkan level produktivitas. Membantu kamu memprioritaskan pekerjaan, menetapkan tenggat waktu, dan mengatur kategori proyek secara efisien.",
       tools: ["Laravel", "Bootstrap", "MySQL", "PHP", "HTML", "CSS", "Javascript"],
-      type: "code"
+      type: "code",
+      repo: "https://github.com/Lutfi1919/laratodo"
     },
     {
       img: code5,
       title: "Iqra",
       description: "Website untuk membaca Al-Quran secara online. Membantu kamu membaca quran dimana saja dengan praktis.",
       tools: ["React", "HTML", "CSS", "Tailwind", "CSS", "Javascript", "Postman"],
-      type: "code"
+      type: "code",
+      repo: "https://github.com/Lutfi1919/iqra"
     },
     {
       img: desain5,
@@ -236,6 +241,8 @@ function App() {
                   title={project.title}
                   description={project.description}
                   tools={project.tools}
+                  type={project.type}
+                  repo={project.repo}
                 />
               ))
             }
