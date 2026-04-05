@@ -3,6 +3,7 @@ header {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 20px;
+  cursor: default;
 }
 
 section {
@@ -10,6 +11,7 @@ section {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
+  cursor: default;
 }
 
 .dw-1 {

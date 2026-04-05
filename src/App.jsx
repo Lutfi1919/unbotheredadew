@@ -26,6 +26,7 @@ import { useState } from "react";
 import ContactComp from "./components/ContactComp";
 import MusicComp from "./components/MusicComp";
 import { HiCursorClick } from "react-icons/hi";
+import ClickSpark from "./components/ClickSpark";
 
 function App() {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -119,6 +120,13 @@ function App() {
   return (
     <>
     <MusicComp/>
+    <ClickSpark
+      sparkColor='#302f2c'
+      sparkSize={10}
+      sparkRadius={20}
+      sparkCount={9}
+      duration={400}
+    >
       <header className="md:mt-16! mt-10! font-semibold md:flex md:justify-between" style={{fontFamily: "Stack Sans Headline"}}>
         <nav data-aos="fade-in-right">
           <p className="text-5xl mb-10 md:mb-9 md:text-[64px]"><span className="duration-150 hover:text-[#d27b2e]">HI,</span> <span className="duration-150 hover:text-[#d27b2e]">SAYA</span> <span className="duration-150 hover:text-[#d27b2e]">LUTHFI.</span></p>
@@ -282,6 +290,7 @@ function App() {
           </div>
         </div>
       </footer>
+    </ClickSpark>
     </>
   )
 }
