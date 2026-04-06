@@ -1,4 +1,5 @@
 import "./App.css";
+import openWork from './assets/bradpitt/opentowork.png';
 import headerImage from './assets/bradpitt/siapa.jpeg';
 import fotoBradpitt from './assets/bradpitt/silutpi.jpeg';
 import MarqueeComp from "./components/MarqueeComp";
@@ -157,7 +158,8 @@ function App() {
           </div>
         </nav>
         <div className="flex justify-center items-center">
-          <img data-aos="fade-in-left" className="img-header mt-10 w-80 h-80 md:w-100 md:h-100" src={headerImage} alt="" style={{ borderRadius: "100%", objectFit: "cover"}}/>
+          <img data-aos="fade-in-left" className="img-header absolute mt-10 w-80 h-80 md:w-100 md:h-100" src={headerImage} alt="Foto Bradpitt" style={{ borderRadius: "100%", objectFit: "cover"}}/>
+          <img data-aos="fade-in-left" className="mt-10 w-80 h-80 md:w-100 md:h-100 me-0.5" src={openWork} alt="" style={{ borderRadius: "100%", objectFit: "cover"}}/>
         </div>
       </header>
       <MarqueeComp />
