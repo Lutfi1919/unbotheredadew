@@ -84,17 +84,17 @@ export default function MusicComp() {
 
     return (
         <div data-aos="fade-in-up" className='fixed text-white z-[100] bottom-0 inset-x-0 bg-[#1db954] py-1' style={{ fontFamily: 'Stack Sans Headline' }}>
-            <div className="mx-8 md:mx-16 flex md:flex-row justify-between items-center gap-4">                
+            <div className="mx-5 md:mx-16 flex md:flex-row justify-between items-center gap-4">                
                 <div className="flex items-center w-full md:w-1/3">
                     <img 
                         src={vinyl} 
-                        className={`w-7 h-7 me-3 ${isPlaying ? 'animate-spin [animation-duration:3000ms]' : ''}`} 
+                        className={`w-5 h-5 md:w-7 md:h-7 me-3 ${isPlaying ? 'animate-spin [animation-duration:3000ms]' : ''}`} 
                         alt="vinyl" 
                     />
                     <div className="overflow-hidden flex items-center">
-                        <p className='text-sm font-medium truncate'>{playlist[currentIndex].title}</p>
+                        <p className='text-[11px] font-medium truncate'>{playlist[currentIndex].title}</p>
                         <p className='mx-1'>-</p>
-                        <p className='text-xs opacity-80 truncate'>{playlist[currentIndex].artist}</p>
+                        <p className='text-[10px] opacity-80 truncate'>{playlist[currentIndex].artist}</p>
                     </div>
                 </div>
 
