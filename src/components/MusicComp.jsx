@@ -92,9 +92,9 @@ export default function MusicComp() {
                         alt="vinyl" 
                     />
                     <div className="overflow-hidden flex items-center">
-                        <p className='text-[11px] font-medium truncate'>{playlist[currentIndex].title}</p>
+                        <p className='text-[11px] md:text-sm font-medium truncate'>{playlist[currentIndex].title}</p>
                         <p className='mx-1'>-</p>
-                        <p className='text-[10px] opacity-80 truncate'>{playlist[currentIndex].artist}</p>
+                        <p className='text-[10px] md:text-xs opacity-80 truncate'>{playlist[currentIndex].artist}</p>
                     </div>
                 </div>
 
