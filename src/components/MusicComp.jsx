@@ -20,30 +20,30 @@ export default function MusicComp() {
     const [isPlaying, setIsPlaying] = useState(false);
     const [volume, setVolume] = useState(0.3);
 
-    useEffect(() => {
-        // Auto-play saat interaksi pertama (kebijakan browser)
-        const playMusic = () => {
-            if (audioRef.current) {
-                audioRef.current.play()
-                    .then(() => {
-                        setIsPlaying(true);
-                        removeInteractions();
-                    }).catch((err) => console.log("Autoplay blocked:", err));
-            }
-        };
+    // useEffect(() => {
+    //     // Auto-play saat interaksi pertama (kebijakan browser)
+    //     const playMusic = () => {
+    //         if (audioRef.current) {
+    //             audioRef.current.play()
+    //                 .then(() => {
+    //                     setIsPlaying(true);
+    //                     removeInteractions();
+    //                 }).catch((err) => console.log("Autoplay blocked:", err));
+    //         }
+    //     };
 
-        const removeInteractions = () => {
-            window.removeEventListener('click', playMusic);
-            window.removeEventListener('scroll', playMusic);
-            window.removeEventListener('touchstart', playMusic);
-        };
+    //     const removeInteractions = () => {
+    //         window.removeEventListener('click', playMusic);
+    //         window.removeEventListener('scroll', playMusic);
+    //         window.removeEventListener('touchstart', playMusic);
+    //     };
 
-        window.addEventListener('click', playMusic);
-        window.addEventListener('scroll', playMusic);
-        window.addEventListener('touchstart', playMusic);
+    //     window.addEventListener('click', playMusic);
+    //     window.addEventListener('scroll', playMusic);
+    //     window.addEventListener('touchstart', playMusic);
 
-        return () => removeInteractions();
-    }, []);
+    //     return () => removeInteractions();
+    // }, []);
 
     // Effect untuk handle ganti lagu
     useEffect(() => {
