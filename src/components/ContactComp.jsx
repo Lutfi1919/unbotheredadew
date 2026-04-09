@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export default function ContactComp() {
-const [status, setStatus] = useState("");
+    const [status, setStatus] = useState("");
     const [captcha, setCaptcha] = useState({ num1: 0, num2: 0 });
     const [captchaInput, setCaptchaInput] = useState("");
 
@@ -16,37 +16,37 @@ const [status, setStatus] = useState("");
     };
 
     const handleSubmit = async (e) => {
-    e.preventDefault();
+        e.preventDefault();
 
-    if (parseInt(captchaInput) !== captcha.num1 + captcha.num2) {
-      setStatus("captcha_error");
-      generateCaptcha();
-      return;
-    }
-
-    const form = e.target;
-    const data = new FormData(form);
-
-    setStatus("loading");
-
-    try {
-        const res = await fetch("https://formspree.io/f/mykbdqok", {
-            method: "POST",
-            body: data,
-            headers: {
-                Accept: "application/json",
-            },
-        });
-        const result = await res.json();
-        console.log(result);
-        if (res.ok) {
-            setStatus("success");
-            form.reset();
-            setCaptchaInput("");
-            generateCaptcha();
-        } else {
-            setStatus("error");
+        if (parseInt(captchaInput) !== captcha.num1 + captcha.num2) {
+        setStatus("captcha_error");
+        generateCaptcha();
+        return;
         }
+
+        const form = e.target;
+        const data = new FormData(form);
+
+        setStatus("loading");
+
+        try {
+            const res = await fetch("https://formspree.io/f/mykbdqok", {
+                method: "POST",
+                body: data,
+                headers: {
+                    Accept: "application/json",
+                },
+            });
+            // const result = await res.json();
+            // console.log(result);
+            if (res.ok) {
+                setStatus("success");
+                form.reset();
+                setCaptchaInput("");
+                generateCaptcha();
+            } else {
+                setStatus("error");
+            }
         } catch {
             setStatus("error");
         }
