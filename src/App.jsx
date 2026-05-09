@@ -124,6 +124,7 @@ function App() {
   ];
   const [showAllSkill, setShowAllSkill] = useState(false);
   const visibleSkills = showAllSkill ? programmingSkills : programmingSkills.slice(0, 3);
+  
   useEffect(() => {
     AOS.init({
       duration: 500,
@@ -257,7 +258,7 @@ function App() {
           <p className="text-6xl md:text-8xl tracking-tight mb-15 font-semibold text-start">Projects.</p>
           <p className="mb-6 -mt-11 md:mt-3 font-semibold text-start opacity-80 text-sm">Berikut beberapa proyek yang telah saya selesaikan, dan saya akan terus belajar untuk meningkatkan keterampilan saya di bidang ini.</p>
         </div>
-        <div className="flex flex-wrap justify-between items-center border-b w-full " data-aos="fade-in">
+        <div className="flex flex-wrap justify-between items-center border-b w-full" data-aos="fade-in">
           <div className="">
             {
               tabs.map((tab) => (
@@ -265,7 +266,7 @@ function App() {
               ))
             }
           </div>
-          <img src={mujaerNongol} className="w-40 translate-y-6.5" alt="" />
+          <img src={mujaerNongol} className="w-40 translate-y-6.5 hidden md:block" alt="" />
         </div>
         <div key={activeTab} data-aos="fade-in-up" data-aos-duration="600" className="mt-8">
           <div className="md:grid md:grid-cols-2 md:gap-4">
