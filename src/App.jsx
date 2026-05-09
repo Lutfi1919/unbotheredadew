@@ -28,6 +28,7 @@ import ContactComp from "./components/ContactComp";
 import MusicComp from "./components/MusicComp";
 import { HiCursorClick } from "react-icons/hi";
 import ClickSpark from "./components/ClickSpark";
+import { GitHubCalendar } from "react-github-calendar";
 
 function App() {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -115,6 +116,12 @@ function App() {
     {id:"tab3", label:"Coding"},
   ];
 
+  const programmingSkills = [
+    "React.js", "Laravel", "Flutter", "Express.js", 
+    "MySQL", "Tailwind CSS", "Bootstrap", "Javascript", "CSS", "HTML"
+  ];
+  const [showAllSkill, setShowAllSkill] = useState(false);
+  const visibleSkills = showAllSkill ? programmingSkills : programmingSkills.slice(0, 3);
   useEffect(() => {
     AOS.init({
       duration: 500,
@@ -164,13 +171,16 @@ function App() {
       </header>
       <MarqueeComp />
       <div className="" id="about"></div>
-      <section className="mt-30! mb-15! md:mb-30! md:grid md:grid-cols-2 md:gap-2" data-aos="fade-in" style={{fontFamily: "Stack Sans Headline"}}>
+      <section className="mt-30! mb-5! md:mb-30! md:grid md:grid-cols-2 md:gap-2" data-aos="fade-in" style={{fontFamily: "Stack Sans Headline"}}>
         <div className="mb-6 md:mb-0">
           <p className="text-3xl md:text-4xl font-extrabold italic">LUTHFI&ensp;&ensp;AHMAD&ensp;&ensp;MAULUDI.</p>
           <p className="leading-14 mt-6 md:mt-6 text-6xl">A student, gamer, do sports and music lover.</p>
           <a href="https://open.spotify.com/user/209b3ifkkusgp7nslaxuaklgy?si=228020036bf642ae" target="_blank" className="hover:text-[#1db954] text-6xl duration-200 spotify"><FaSpotify/></a>
+          {/* <div className="p-3 pb-5 mt-10 me-4 rounded-2xl bg-[#302f2c]/40 ring-inset ring-[0.5px] ring-black/20">
+            <img src="https://ghchart.rshah.org/Lutfi1919" alt="GitHub Contributions Chart" />
+          </div> */}
         </div>
-        <div className="">
+        <div className="transition-all duration-300">
           <p className="text-3xl [word-spacing:10px] md:text-end">Saya adalah seseorang yang senang menjelajahi desain dan menemukan ide-ide baru. Selalu ingin tahu, selalu belajar.</p>
           <div className="flex mt-8 justify-between">
             <div className="">
@@ -182,11 +192,23 @@ function App() {
                 <li>....</li>
               </ul>
             </div>
-            <div className="">
+            <div className="transition-all duration-300">
               <p className="text-2xl italic font-semibold">Hard Skill</p>
-              <ul className="list-disc ms-5">
+              <ul className="list-disc ms-5 transition-all duration-300">
                 <li>UI/UX design</li>
-                <li>Programming</li>
+                <li>Programming
+                  <ul className="text-sm ms-2 mt-1">
+                    {visibleSkills.map((skill, index) => (
+                      <li key={index}>• {skill}</li>
+                    ))}
+                  </ul>
+                  <button 
+                    onClick={() => setShowAllSkill(!showAllSkill)}
+                    className="text-blue-500 text-xs font-bold mt-1 hover:underline cursor-pointer"
+                  >
+                    {showAllSkill ? "Show Less" : `View More (${programmingSkills.length - 3} more...)`}
+                  </button>
+                </li>
                 <li>Automotive service</li>
                 <li>....</li>
               </ul>
@@ -200,8 +222,12 @@ function App() {
           </div>
         </div>
       </section>
+      <section className="mb-20! flex flex-col justify-center" data-aos="fade-in" style={{fontFamily: "Stack Sans Headline"}}>
+        <p className="text-2xl font-semibold mb-5" data-aos="fade-in">Github Contributions</p>
+        <GitHubCalendar username="Lutfi1919" blockSize={16} style={{fontFamily: "Stack Sans Headline"}}/>
+      </section>
       <section className="" style={{fontFamily: "Stack Sans Headline"}}>
-        <p className="text-2xl font-semibold" data-aos="fade-in">Riwayat Pendidikan</p>
+        <p className="text-2xl font-semibold" data-aos="fade-in">Educational History</p>
         <div className="mt-5">
           <SekolahComp link={"https://sekolah.data.kemendikdasmen.go.id/profil-sekolah/80C38105-2DF5-E011-B4EE-55755C678D10"} logo={logoSD} nama={"Sekolah Dasar Negeri Harjasari 1, Bogor"} jurusan={"Student"} awalMasuk={"2015"} lulus={"2021"}/>
           <p className="text-end text-3xl -mt-5 mb-1.5 border-r-2 me-3 opacity-60" data-aos="fade-in">&ensp;</p>
