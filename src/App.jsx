@@ -29,6 +29,7 @@ import MusicComp from "./components/MusicComp";
 import { HiCursorClick } from "react-icons/hi";
 import ClickSpark from "./components/ClickSpark";
 import { GitHubCalendar } from "react-github-calendar";
+import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -198,14 +199,22 @@ function App() {
                 <li>UI/UX design</li>
                 <li>Programming
                   <ul className="text-sm ms-2 mt-1">
-                    {visibleSkills.map((skill, index) => (
-                      <li key={index}>• {skill}</li>
-                    ))}
+                    <AnimatePresence initial={false}>
+                      {visibleSkills.map((skill, index) => (
+                        <motion.li
+                          key={skill}
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.3, ease: "easeInOut" }}
+                          style={{ overflow: "hidden" }}
+                        >
+                          • {skill}
+                        </motion.li>
+                      ))}
+                    </AnimatePresence>
                   </ul>
-                  <button 
-                    onClick={() => setShowAllSkill(!showAllSkill)}
-                    className="text-blue-500 text-xs font-bold mt-1 hover:underline cursor-pointer"
-                  >
+                  <button onClick={() => setShowAllSkill(!showAllSkill)} className="text-blue-500 text-xs font-bold mt-2 hover:underline cursor-pointer block">
                     {showAllSkill ? "Show Less" : `View More (${programmingSkills.length - 3} more...)`}
                   </button>
                 </li>
