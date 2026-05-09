@@ -21,6 +21,7 @@ import desain2 from './assets/projects/desain2.png';
 import desain3 from './assets/projects/desain3.png';
 import desain4 from './assets/projects/desain4.png';
 import desain5 from './assets/projects/webosis.png';
+import mujaerNongol from './assets/mujaer nongol.png';
 import ProjectCardComp from "./components/ProjectCardComp";
 import CircularGallery from './components/CircularGallery';
 import { useState } from "react";
@@ -256,12 +257,15 @@ function App() {
           <p className="text-6xl md:text-8xl tracking-tight mb-15 font-semibold text-start">Projects.</p>
           <p className="mb-6 -mt-11 md:mt-3 font-semibold text-start opacity-80 text-sm">Berikut beberapa proyek yang telah saya selesaikan, dan saya akan terus belajar untuk meningkatkan keterampilan saya di bidang ini.</p>
         </div>
-        <div className="flex flex-wrap border-b w-full justify-start" data-aos="fade-in">
-          {
-            tabs.map((tab) => (
-              <button key={tab.id} className={`px-2 text-xl md:px-4 md:text-3xl py-2 font-semibold ${activeTab === tab.id ? "border-[#302f2c] text-[#302f2c] mt-0.5" : "duration-350 opacity-60 hover:opacity-100 hover:-translate-y-1 hover:text-[#302f2c]"}`} onClick={() => setActiveTab(tab.id)}>{tab.label}</button>
-            ))
-          }
+        <div className="flex flex-wrap justify-between items-center border-b w-full " data-aos="fade-in">
+          <div className="">
+            {
+              tabs.map((tab) => (
+                <button key={tab.id} className={`px-2 text-xl md:px-4 md:text-3xl py-2 font-semibold ${activeTab === tab.id ? "border-[#302f2c] text-[#302f2c] mt-0.5" : "duration-350 opacity-60 hover:opacity-100 hover:-translate-y-1 hover:text-[#302f2c]"}`} onClick={() => setActiveTab(tab.id)}>{tab.label}</button>
+              ))
+            }
+          </div>
+          <img src={mujaerNongol} className="w-40 translate-y-6.5" alt="" />
         </div>
         <div key={activeTab} data-aos="fade-in-up" data-aos-duration="600" className="mt-8">
           <div className="md:grid md:grid-cols-2 md:gap-4">
