@@ -8,6 +8,7 @@ import certif5 from '../assets/certificates/Financial_Literacy.jpg';
 import certif8 from '../assets/certificates/Express_Course.jpg';
 import certif9 from '../assets/certificates/Coding_Teen.png';
 import certif10 from '../assets/certificates/Certif_K3.jpg';
+import certif11 from '../assets/certificates/sertif frontend.jpg';
 
 import './CircularGallery.css';
 
@@ -345,6 +346,7 @@ class App {
       { image: certif1, text: '' },
       { image: certif2, text: '' },
       { image: certif3, text: '' },
+      { image: certif11, text: '' },
       { image: certif4, text: '' },
       { image: certif5, text: '' },
       { image: certif8, text: '' },
