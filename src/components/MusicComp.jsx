@@ -66,7 +66,7 @@ export default function MusicComp() {
                     <img 
                         src={vinyl} 
                         className={`w-5 h-5 md:w-7 md:h-7 me-3 ${isPlaying ? 'animate-spin [animation-duration:3000ms]' : ''}`} 
-                        alt="vinyl" 
+                        alt="vinyll" 
                     />
                     <div className="overflow-hidden flex items-center">
                         <p className='text-[11px] md:text-sm font-medium truncate'>{playlist[currentIndex].title}</p>
