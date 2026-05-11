@@ -20,7 +20,6 @@ export default function MusicComp() {
     const [isPlaying, setIsPlaying] = useState(false);
     const [volume, setVolume] = useState(0.3);
 
-
     // Effect untuk handle ganti lagu
     useEffect(() => {
         if (audioRef.current) {
