@@ -323,7 +323,7 @@ function App() {
               <div className="flex justify-center md:justify-start">
                 <img src={fotoBradpitt} className="animate-spin [animation-duration:3000ms] w-20 mb-10 md:mb-25 h-20 object-cover rounded-full" alt="Bradpitt" />
               </div>
-              <p className="mb-10 md:tracking-wider text-sm">© Made by Bradpitt (Luthfi). All rights reserved.</p>
+              <p className="mb-10 md:tracking-wider text-sm">© 2026. Made by Bradpitt (Luthfi).</p>
             </div>
             <div className="">
               <div className="grid grid-cols-1 text-center md:flex mb-10 md:mb-30 text-3xl md:justify-between">
