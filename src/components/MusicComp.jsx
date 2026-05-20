@@ -7,14 +7,14 @@ import lagu2 from '../assets/Louise.mp3';
 import lagu3 from '../assets/ThinkinBoutYou.mp3';
 import lagu4 from '../assets/DSB.mp3';
 
-const playlist = [
-    { title: "Thinkin' Bout You", artist: "Frank Ocean", src: lagu3 },
-    { title: "Louise", artist: "TV Girl", src: lagu2 },
-    { title: "Stand By Me", artist: "Aldi Taher", src: lagu1 },
-    { title: "Don't Stop Believin'", artist: "Journey", src: lagu4 },
-];
-
 export default function MusicComp() {
+    const playlist = [
+        { title: "Thinkin' Bout You", artist: "Frank Ocean", src: lagu3 },
+        { title: "Louise", artist: "TV Girl", src: lagu2 },
+        { title: "Stand By Me", artist: "Aldi Taher", src: lagu1 },
+        { title: "Don't Stop Believin'", artist: "Journey", src: lagu4 },
+    ];
+    
     const audioRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isPlaying, setIsPlaying] = useState(false);

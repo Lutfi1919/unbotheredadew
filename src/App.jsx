@@ -229,7 +229,7 @@ function App() {
             <div className="md:flex md:justify-between">
               <p className="mt-10 text-sm font-semibold text-[#d27b2e]">BORN IN <br /> <span className="text-3xl font-semibold text-[#302f2c]">Bogor</span></p>
               <p className="mt-10 text-sm font-semibold text-[#d27b2e]">DATE OF BIRTH <br /> <span className="text-3xl font-semibold text-[#302f2c]">6 March 2009</span></p>
-              <p className="mt-10 text-sm font-semibold text-[#d27b2e]">SEX <br /> <span className="text-3xl font-semibold text-[#302f2c]">JALU</span></p>
+              <p className="mt-10 text-sm font-semibold text-[#d27b2e]">SEX <br /> <span className="text-3xl font-semibold text-[#302f2c]">MALE</span></p>
             </div>
           </div>
         </section>
