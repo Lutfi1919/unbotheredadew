@@ -26,7 +26,6 @@ import ProjectCardComp from "./components/ProjectCardComp";
 import CircularGallery from './components/CircularGallery';
 import { useState } from "react";
 import ContactComp from "./components/ContactComp";
-import MusicComp from "./components/MusicComp";
 import { HiCursorClick } from "react-icons/hi";
 import ClickSpark from "./components/ClickSpark";
 import { GitHubCalendar } from "react-github-calendar";
@@ -135,7 +134,6 @@ function App() {
 
   return (
     <>
-      <MusicComp/>
       <ClickSpark
         sparkColor='#302f2c'
         sparkSize={10}
