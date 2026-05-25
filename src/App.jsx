@@ -30,6 +30,7 @@ import { HiCursorClick } from "react-icons/hi";
 import ClickSpark from "./components/ClickSpark";
 import { GitHubCalendar } from "react-github-calendar";
 import { motion, AnimatePresence } from "framer-motion";
+import MusicComp from "./components/MusicComp";
 
 function App() {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -134,6 +135,7 @@ function App() {
 
   return (
     <>
+      <MusicComp />
       <ClickSpark
         sparkColor='#302f2c'
         sparkSize={10}

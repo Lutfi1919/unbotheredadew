@@ -19,9 +19,9 @@ export default function ContactComp() {
         e.preventDefault();
 
         if (parseInt(captchaInput) !== captcha.num1 + captcha.num2) {
-        setStatus("captcha_error");
-        generateCaptcha();
-        return;
+            setStatus("captcha_error");
+            generateCaptcha();
+            return;
         }
 
         const form = e.target;
@@ -37,8 +37,7 @@ export default function ContactComp() {
                     Accept: "application/json",
                 },
             });
-            // const result = await res.json();
-            // console.log(result);
+
             if (res.ok) {
                 setStatus("success");
                 form.reset();
