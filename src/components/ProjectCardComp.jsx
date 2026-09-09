@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { AiFillGithub } from "react-icons/ai";
 
 export default function ProjectCardComp({ img, title, description, tools = [], type, repo }) {
     const [isHovered, setIsHovered] = useState(false);
@@ -17,8 +18,8 @@ export default function ProjectCardComp({ img, title, description, tools = [], t
                         <div className="relative overflow-hidden cursor-pointer" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                             <img src={img} className="object-cover img-code" alt={title} style={imgStyle} />
                             <div className={`absolute inset-0 flex items-center justify-center bg-black/80 transition-opacity duration-200 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
-                                <a href={repo} target="_blank" className="text-white font-bold text-xl px-4 text-center">
-                                    Lihat Repositori
+                                <a href={repo} target="_blank" className="text-white font-bold text-5xl  px-4 text-center ">
+                                    <AiFillGithub />
                                 </a>
                             </div>
                         </div>
