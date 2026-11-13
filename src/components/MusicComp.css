@@ -3,3 +3,40 @@
     display: none;
   }
 }
+
+@keyframes music-slide-next {
+  from {
+    transform: translateX(28px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes music-slide-prev {
+  from {
+    transform: translateX(-28px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.music-slide-next {
+  animation: music-slide-next 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.music-slide-prev {
+  animation: music-slide-prev 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .music-slide-next,
+  .music-slide-prev {
+    animation: none;
+  }
+}

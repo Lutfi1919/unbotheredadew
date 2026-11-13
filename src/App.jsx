@@ -31,8 +31,10 @@ import ClickSpark from "./components/ClickSpark";
 import { GitHubCalendar } from "react-github-calendar";
 import { motion, AnimatePresence } from "framer-motion";
 import MusicComp from "./components/MusicComp";
+import useSmoothScroll from "./hooks/useSmoothScroll";
 
 function App() {
+  useSmoothScroll();
   const [activeTab, setActiveTab] = useState("tab1");
   const myProjects = [
     {
