@@ -16,6 +16,7 @@ import code2 from './assets/projects/portoke3.png';
 import code3 from './assets/projects/webosis.png';
 import code4 from './assets/projects/todoapp.png';
 import code5 from './assets/projects/iqra.png';
+import code6 from './assets/projects/car rental.png';
 import desain1 from './assets/projects/desain1.png';
 import desain2 from './assets/projects/desain2.png';
 import desain3 from './assets/projects/desain3.png';
@@ -76,6 +77,14 @@ function App() {
       tools: ["React", "HTML", "CSS", "Tailwind", "CSS", "Javascript", "Postman"],
       type: "code",
       repo: "https://github.com/Lutfi1919/iqra"
+    },
+    {
+      img: code6,
+      title: "Car Rental",
+      description: "Website untuk menyewa mobil secara online. Membantu kamu mencari dan menyewa mobil dengan mudah.",
+      tools: ["React", "Express", "Node.js", "Sequelize", "MySQL", "HTML", "CSS", "Tailwind", "CSS", "Javascript", "Postman"],
+      type: "code",
+      repo: "https://github.com/Lutfi1919/fe-car-rental-system"
     },
     {
       img: desain5,
